@@ -73,7 +73,7 @@ const journey = [
   {
     step: '03',
     title: 'Open for real opportunities',
-    text: 'I am preparing for freelance, internship, and junior developer opportunities where I can deliver and keep growing.',
+    text: 'I am preparing for freelance, internship, and junior developer opportunities where I can deliver and keep growing..',
   },
 ];
 
