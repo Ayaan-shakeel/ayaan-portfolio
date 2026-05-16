@@ -16,6 +16,7 @@ import {
   Sun,
   X,
 } from 'lucide-react';
+import { title } from 'framer-motion/client';
 const skills = [
   'React',
   'Node.js',
@@ -50,6 +51,12 @@ const stacks = [
     items: ['MongoDB', 'Supabase'],
     text: 'I work with modern databases and backend services to connect real data with real products.',
   },
+  {
+    title:'Deployement',
+    icon:'Deploying',
+    items:['Vercel','Render','MongoDB Atlas'],
+    text:'I deploy my projects on platforms like Vercel and Render, and use MongoDB Atlas for database hosting.',
+  }
 ];
 
 const journey = [
@@ -75,7 +82,7 @@ const projects = [
     title: 'Advanced Authentication System (Auth-App)',
     tag: 'Full Stack',
     icon: Shield,
-    text: "A premium MERN authentication system with OTP verification, Google Login, JWT auth, profile management, login history, device tracking, password reset, and responsive UI.",
+    text: "A premium MERN authentication system with OTP verification, Google Login, JWT auth, profile management, login history, device tracking,  password reset, and responsive UI.",
     stack: ["React", "Node.js", "MongoDB", "JWT", "Tailwind"],
     github: "https://github.com/Ayaan-shakeel",
     live: "https://authentication-client-zeta.vercel.app/",
