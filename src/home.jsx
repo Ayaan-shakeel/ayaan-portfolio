@@ -11,7 +11,6 @@ import {
   Moon,
   Phone,
   Server,
-  Shield,
   Sparkles,
   Sun,
   X,
@@ -25,8 +24,6 @@ const skills = [
   'JavaScript',
   'CSS',
   'HTML',
-  'Rest APIs',
-  'JWT',
   'Supabase',
   'Django Basics',
 ];
@@ -70,26 +67,22 @@ const journey = [
   },
 ];
 
-const projects = [
+const placeholders = [
   {
-    title: 'Advanced Authentication System (Auth-App)',
-    tag: 'Full Stack',
-    icon: Shield,
-    text: "A premium MERN authentication system with OTP verification, Google Login, JWT auth, profile management, login history, device tracking, password reset, and responsive UI.",
-    stack: ["React", "Node.js", "MongoDB", "JWT", "Tailwind"],
-    github: "https://github.com/Ayaan-shakeel",
-    live: "https://authentication-client-zeta.vercel.app/",
+    title: 'Project one coming soon',
+    tag: 'In Progress',
+    text: 'A modern web project will be showcased here soon with stack details, features, and live links.',
   },
-  // {
-  //   title: 'Project two coming soon',
-  //   tag: 'Building',
-  //   text: 'This section is ready for your next React or full-stack project once you complete it.',
-  // },
-  // {
-  //   title: 'Project three coming soon',
-  //   tag: 'Next Upload',
-  //   text: 'Your future work can be displayed here with screenshots, GitHub links, and problem-solving details.',
-  // }
+  {
+    title: 'Project two coming soon',
+    tag: 'Building',
+    text: 'This section is ready for your next React or full-stack project once you complete it.',
+  },
+  {
+    title: 'Project three coming soon',
+    tag: 'Next Upload',
+    text: 'Your future work can be displayed here with screenshots, GitHub links, and problem-solving details.',
+  },
 ];
 
 function ThemeToggle({ dark, setDark }) {
@@ -224,12 +217,14 @@ export default function AyaanPortfolio() {
             </div>
 
             <div className="space-y-5">
-              <h1 className="max-w-4xl text-4xl font-semibold leading-tight  sm:text-5xl lg:text-6xl">
-                I’m Ayaan Shakeel, building clean modern web experiences with Full Stack Development
+              <h1 className="max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+                I’m Ayaan Shakeel, building clean modern web experiences with React and the
+                full-stack path ahead.
               </h1>
               <p className={`max-w-2xl text-base leading-8 sm:text-lg ${mutedClass}`}>
-                 I build responsive MERN stack applications with modern UI/UX,
-            authentication systems, backend APIs, and scalable frontend architecture.
+                I am a developer focused on responsive UI, modern frontend structure, and
+                growing into backend development with Node.js, Express, MongoDB, Supabase, and
+                Django basics.
               </p>
             </div>
 
@@ -316,11 +311,8 @@ export default function AyaanPortfolio() {
         <section id="about" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="About Me"
-            title=" Focused on becoming a strong full-stack developer."
-            text="I am currently focused on building modern full-stack web applications
-            using the MERN stack. My main strength is frontend development,
-            but I’m actively improving backend logic, authentication systems,
-            APIs, databases, and deployment workflows."
+            title="Focused on learning fast and building better every day."
+            text="I am building my skills through practical development work. My main strength right now is frontend development with React, and I am actively expanding into backend and database systems to become a stronger full-stack developer."
             mutedClass={mutedClass}
           />
         </section>
@@ -408,117 +400,17 @@ export default function AyaanPortfolio() {
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {projects.map((project) => (
-             <article
-  key={project.title}
-  className={`
-    group
-    rounded-[2rem]
-    border
-    p-6
-    transition-all
-    duration-300
-    hover:-translate-y-2
-    hover:shadow-2xl
-    ${cardClass}
-  `}
->
-
-  {/* TOP */}
-  <div className="flex items-center justify-between">
-
-    <span className="rounded-full border border-teal-400/20 bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-300">
-      {project.tag}
-    </span>
-
-    <ExternalLink
-      className="
-        h-5 w-5 text-zinc-400
-        group-hover:text-teal-300
-        transition
-      "
-    />
-
-  </div>
-
-  {/* TITLE */}
-  <h3 className="mt-5 text-2xl font-semibold">
-    {project.title}
-  </h3>
-
-  {/* DESCRIPTION */}
-  <p className={`mt-4 text-sm leading-7 ${mutedClass}`}>
-    {project.text}
-  </p>
-
-  {/* STACK */}
-  <div className="mt-5 flex flex-wrap gap-2">
-
-    {project.stack.map((tech) => (
-      <span
-        key={tech}
-        className="
-          rounded-full
-          bg-teal-400/10
-          border border-teal-400/20
-          px-3 py-1
-          text-xs
-          text-teal-300
-        "
-      >
-        {tech}
-      </span>
-    ))}
-
-  </div>
-
-  {/* BUTTONS */}
-  <div className="mt-6 flex gap-3">
-
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        flex-1
-        rounded-xl
-        border
-        border-white/10
-        px-4 py-3
-        text-center
-        text-sm
-        font-medium
-        transition
-        hover:border-teal-400/40
-        hover:text-teal-300
-      "
-    >
-      GitHub
-    </a>
-
-    <a
-      href={project.live}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        flex-1
-        rounded-xl
-        bg-teal-500
-        px-4 py-3
-        text-center
-        text-sm
-        font-semibold
-        text-black
-        transition
-        hover:bg-teal-400
-      "
-    >
-      Live Demo
-    </a>
-
-  </div>
-
-</article>
+            {placeholders.map((project) => (
+              <article key={project.title} className={`rounded-[2rem] border p-6 ${cardClass}`}>
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full border border-teal-400/20 bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-300">
+                    {project.tag}
+                  </span>
+                  <ExternalLink className={`h-4 w-4 ${mutedClass}`} />
+                </div>
+                <h3 className="mt-5 text-xl font-semibold">{project.title}</h3>
+                <p className={`mt-4 text-sm leading-7 ${mutedClass}`}>{project.text}</p>
+              </article>
             ))}
           </div>
         </section>
