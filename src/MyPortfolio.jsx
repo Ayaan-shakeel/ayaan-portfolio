@@ -15,6 +15,9 @@ import {
   Sparkles,
   Sun,
   X,
+  School,
+  Cloud,
+  HandHelping,
 } from 'lucide-react';
 import { title } from 'framer-motion/client';
 const skills = [
@@ -53,7 +56,7 @@ const stacks = [
   },
   {
     title:'Deployement',
-    icon:'Deploying',
+    icon:Cloud,
     items:['Vercel','Render','MongoDB Atlas'],
     text:'I deploy my projects on platforms like Vercel and Render, and use MongoDB Atlas for database hosting.',
   }
@@ -83,9 +86,27 @@ const projects = [
     tag: 'Full Stack',
     icon: Shield,
     text: "A premium MERN authentication system with OTP verification, Google Login, JWT auth, profile management, login history, device tracking,  password reset, and responsive UI.",
-    stack: ["React", "Node.js", "MongoDB", "JWT", "Tailwind"],
+    stack: ["React", "Node.js", "Mongoose", "JWT", "Tailwind","Express","Google Auth","Brevo","Framer motion"],
     github: "https://github.com/Ayaan-shakeel",
     live: "https://authentication-client-zeta.vercel.app/",
+  },
+  {
+    title: 'AI Study Flow (An Study app with AI integration in it)',
+    tag: 'Full Stack',
+    icon: School,
+    text: "A premium study app with AI integration in it, with a focus on user-friendly interfaces, responsive design, and real-time data visualization with full functionality.",
+    stack: ["React", "Node.js", "Mongoose", "JWT", "Tailwind","Express","Gemini API","Framer motion"],
+    github: "https://github.com/Ayaan-shakeel/ai-studyflow.git",
+    live: "https://ai-studyflow-three.vercel.app/",
+  },
+  {
+    title: 'She can foundation (An internship selection project)',
+    tag: 'Full Stack',
+    icon: HandHelping,
+    text: "An internship selection project with a focus on user-friendly interfaces, responsive design, and form submissions with data visualization and an admin panel of user queries and responses.",
+    stack: ["React", "Node.js", "Mongoose","Tailwind","Express","Framer motion"],
+    github: "https://github.com/Ayaan-shakeel/She-can-foundation-project.git",
+    live: "https://she-can-foundation-project-two.vercel.app/",
   },
   // {
   //   title: 'Project two coming soon',
@@ -540,8 +561,7 @@ export default function AyaanPortfolio() {
                 Let’s connect for opportunities and projects.
               </h2>
               <p className={`mt-4 text-base leading-8 ${mutedClass}`}>
-                You can update this section with your real email, phone number, freelance links,
-                or internship contact details.
+                You can contact me by email or whatsapp on my number given below I will be happy to help you out.
               </p>
             </div>
 
